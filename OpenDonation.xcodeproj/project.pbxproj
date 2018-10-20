@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		050AFDB9217AD2E700B4EE63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050AFDB8217AD2E700B4EE63 /* AppDelegate.swift */; };
+		050AFDBB217AD2E700B4EE63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050AFDBA217AD2E700B4EE63 /* ViewController.swift */; };
+		050AFDBE217AD2E700B4EE63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050AFDBC217AD2E700B4EE63 /* Main.storyboard */; };
+		050AFDC1217AD2E700B4EE63 /* OpenDonation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 050AFDBF217AD2E700B4EE63 /* OpenDonation.xcdatamodeld */; };
+		050AFDC3217AD2E800B4EE63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 050AFDC2217AD2E800B4EE63 /* Assets.xcassets */; };
+		050AFDC6217AD2E800B4EE63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050AFDC4217AD2E800B4EE63 /* LaunchScreen.storyboard */; };
+		050AFDD1217AD2E800B4EE63 /* OpenDonationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050AFDD0217AD2E800B4EE63 /* OpenDonationTests.swift */; };
+		050AFDDC217AD2E800B4EE63 /* OpenDonationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050AFDDB217AD2E800B4EE63 /* OpenDonationUITests.swift */; };
+		05DC7AB6217AFB60005B6FAD /* SquarePointOfSaleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05DC7AB5217AFB42005B6FAD /* SquarePointOfSaleSDK.framework */; };
+		05DC7ABB217AFED6005B6FAD /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DC7ABA217AFED6005B6FAD /* Constant.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		050AFDCD217AD2E800B4EE63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 050AFDAD217AD2E700B4EE63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 050AFDB4217AD2E700B4EE63;
+			remoteInfo = OpenDonation;
+		};
+		050AFDD8217AD2E800B4EE63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 050AFDAD217AD2E700B4EE63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 050AFDB4217AD2E700B4EE63;
+			remoteInfo = OpenDonation;
+		};
+		05DC7AB4217AFB42005B6FAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05DC7AAF217AFB42005B6FAD /* SquarePointOfSaleSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D3BD92C1CA9D6C600DA2B06;
+			remoteInfo = SquarePointOfSaleSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		050AFDB5217AD2E700B4EE63 /* OpenDonation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenDonation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		050AFDB8217AD2E700B4EE63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		050AFDBA217AD2E700B4EE63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		050AFDBD217AD2E700B4EE63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		050AFDC0217AD2E700B4EE63 /* OpenDonation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OpenDonation.xcdatamodel; sourceTree = "<group>"; };
+		050AFDC2217AD2E800B4EE63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		050AFDC5217AD2E800B4EE63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		050AFDC7217AD2E800B4EE63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		050AFDCC217AD2E800B4EE63 /* OpenDonationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenDonationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		050AFDD0217AD2E800B4EE63 /* OpenDonationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenDonationTests.swift; sourceTree = "<group>"; };
+		050AFDD2217AD2E800B4EE63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		050AFDD7217AD2E800B4EE63 /* OpenDonationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenDonationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		050AFDDB217AD2E800B4EE63 /* OpenDonationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenDonationUITests.swift; sourceTree = "<group>"; };
+		050AFDDD217AD2E800B4EE63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05DC7AAF217AFB42005B6FAD /* SquarePointOfSaleSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SquarePointOfSaleSDK.xcodeproj; path = "SquarePointOfSaleSDK-iOS/SquarePointOfSaleSDK.xcodeproj"; sourceTree = "<group>"; };
+		05DC7ABA217AFED6005B6FAD /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		050AFDB2217AD2E700B4EE63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05DC7AB6217AFB60005B6FAD /* SquarePointOfSaleSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		050AFDC9217AD2E800B4EE63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		050AFDD4217AD2E800B4EE63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		050AFDAC217AD2E700B4EE63 = {
+			isa = PBXGroup;
+			children = (
+				050AFDB7217AD2E700B4EE63 /* OpenDonation */,
+				050AFDCF217AD2E800B4EE63 /* OpenDonationTests */,
+				050AFDDA217AD2E800B4EE63 /* OpenDonationUITests */,
+				050AFDB6217AD2E700B4EE63 /* Products */,
+				7A6EBD074DEFF8BD69E336DA /* Frameworks */,
+				05DC7AAF217AFB42005B6FAD /* SquarePointOfSaleSDK.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		050AFDB6217AD2E700B4EE63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				050AFDB5217AD2E700B4EE63 /* OpenDonation.app */,
+				050AFDCC217AD2E800B4EE63 /* OpenDonationTests.xctest */,
+				050AFDD7217AD2E800B4EE63 /* OpenDonationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		050AFDB7217AD2E700B4EE63 /* OpenDonation */ = {
+			isa = PBXGroup;
+			children = (
+				050AFDB8217AD2E700B4EE63 /* AppDelegate.swift */,
+				050AFDBA217AD2E700B4EE63 /* ViewController.swift */,
+				05DC7ABA217AFED6005B6FAD /* Constant.swift */,
+				050AFDBC217AD2E700B4EE63 /* Main.storyboard */,
+				050AFDC2217AD2E800B4EE63 /* Assets.xcassets */,
+				050AFDC4217AD2E800B4EE63 /* LaunchScreen.storyboard */,
+				050AFDC7217AD2E800B4EE63 /* Info.plist */,
+				050AFDBF217AD2E700B4EE63 /* OpenDonation.xcdatamodeld */,
+			);
+			path = OpenDonation;
+			sourceTree = "<group>";
+		};
+		050AFDCF217AD2E800B4EE63 /* OpenDonationTests */ = {
+			isa = PBXGroup;
+			children = (
+				050AFDD0217AD2E800B4EE63 /* OpenDonationTests.swift */,
+				050AFDD2217AD2E800B4EE63 /* Info.plist */,
+			);
+			path = OpenDonationTests;
+			sourceTree = "<group>";
+		};
+		050AFDDA217AD2E800B4EE63 /* OpenDonationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				050AFDDB217AD2E800B4EE63 /* OpenDonationUITests.swift */,
+				050AFDDD217AD2E800B4EE63 /* Info.plist */,
+			);
+			path = OpenDonationUITests;
+			sourceTree = "<group>";
+		};
+		05DC7AB0217AFB42005B6FAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05DC7AB5217AFB42005B6FAD /* SquarePointOfSaleSDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A6EBD074DEFF8BD69E336DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		050AFDB4217AD2E700B4EE63 /* OpenDonation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 050AFDE0217AD2E800B4EE63 /* Build configuration list for PBXNativeTarget "OpenDonation" */;
+			buildPhases = (
+				050AFDB1217AD2E700B4EE63 /* Sources */,
+				050AFDB2217AD2E700B4EE63 /* Frameworks */,
+				050AFDB3217AD2E700B4EE63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenDonation;
+			productName = OpenDonation;
+			productReference = 050AFDB5217AD2E700B4EE63 /* OpenDonation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		050AFDCB217AD2E800B4EE63 /* OpenDonationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 050AFDE3217AD2E800B4EE63 /* Build configuration list for PBXNativeTarget "OpenDonationTests" */;
+			buildPhases = (
+				050AFDC8217AD2E800B4EE63 /* Sources */,
+				050AFDC9217AD2E800B4EE63 /* Frameworks */,
+				050AFDCA217AD2E800B4EE63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				050AFDCE217AD2E800B4EE63 /* PBXTargetDependency */,
+			);
+			name = OpenDonationTests;
+			productName = OpenDonationTests;
+			productReference = 050AFDCC217AD2E800B4EE63 /* OpenDonationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		050AFDD6217AD2E800B4EE63 /* OpenDonationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 050AFDE6217AD2E800B4EE63 /* Build configuration list for PBXNativeTarget "OpenDonationUITests" */;
+			buildPhases = (
+				050AFDD3217AD2E800B4EE63 /* Sources */,
+				050AFDD4217AD2E800B4EE63 /* Frameworks */,
+				050AFDD5217AD2E800B4EE63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				050AFDD9217AD2E800B4EE63 /* PBXTargetDependency */,
+			);
+			name = OpenDonationUITests;
+			productName = OpenDonationUITests;
+			productReference = 050AFDD7217AD2E800B4EE63 /* OpenDonationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		050AFDAD217AD2E700B4EE63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Simon Loffler";
+				TargetAttributes = {
+					050AFDB4217AD2E700B4EE63 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					050AFDCB217AD2E800B4EE63 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 050AFDB4217AD2E700B4EE63;
+					};
+					050AFDD6217AD2E800B4EE63 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 050AFDB4217AD2E700B4EE63;
+					};
+				};
+			};
+			buildConfigurationList = 050AFDB0217AD2E700B4EE63 /* Build configuration list for PBXProject "OpenDonation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 050AFDAC217AD2E700B4EE63;
+			productRefGroup = 050AFDB6217AD2E700B4EE63 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 05DC7AB0217AFB42005B6FAD /* Products */;
+					ProjectRef = 05DC7AAF217AFB42005B6FAD /* SquarePointOfSaleSDK.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				050AFDB4217AD2E700B4EE63 /* OpenDonation */,
+				050AFDCB217AD2E800B4EE63 /* OpenDonationTests */,
+				050AFDD6217AD2E800B4EE63 /* OpenDonationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		05DC7AB5217AFB42005B6FAD /* SquarePointOfSaleSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SquarePointOfSaleSDK.framework;
+			remoteRef = 05DC7AB4217AFB42005B6FAD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		050AFDB3217AD2E700B4EE63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				050AFDC6217AD2E800B4EE63 /* LaunchScreen.storyboard in Resources */,
+				050AFDC3217AD2E800B4EE63 /* Assets.xcassets in Resources */,
+				050AFDBE217AD2E700B4EE63 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		050AFDCA217AD2E800B4EE63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		050AFDD5217AD2E800B4EE63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		050AFDB1217AD2E700B4EE63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				050AFDC1217AD2E700B4EE63 /* OpenDonation.xcdatamodeld in Sources */,
+				050AFDBB217AD2E700B4EE63 /* ViewController.swift in Sources */,
+				050AFDB9217AD2E700B4EE63 /* AppDelegate.swift in Sources */,
+				05DC7ABB217AFED6005B6FAD /* Constant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		050AFDC8217AD2E800B4EE63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				050AFDD1217AD2E800B4EE63 /* OpenDonationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		050AFDD3217AD2E800B4EE63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				050AFDDC217AD2E800B4EE63 /* OpenDonationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		050AFDCE217AD2E800B4EE63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 050AFDB4217AD2E700B4EE63 /* OpenDonation */;
+			targetProxy = 050AFDCD217AD2E800B4EE63 /* PBXContainerItemProxy */;
+		};
+		050AFDD9217AD2E800B4EE63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 050AFDB4217AD2E700B4EE63 /* OpenDonation */;
+			targetProxy = 050AFDD8217AD2E800B4EE63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		050AFDBC217AD2E700B4EE63 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				050AFDBD217AD2E700B4EE63 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		050AFDC4217AD2E800B4EE63 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				050AFDC5217AD2E800B4EE63 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		050AFDDE217AD2E800B4EE63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		050AFDDF217AD2E800B4EE63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		050AFDE1217AD2E800B4EE63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4P8S9W2NYL;
+				INFOPLIST_FILE = OpenDonation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sighmon.OpenDonation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		050AFDE2217AD2E800B4EE63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4P8S9W2NYL;
+				INFOPLIST_FILE = OpenDonation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sighmon.OpenDonation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		050AFDE4217AD2E800B4EE63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4P8S9W2NYL;
+				INFOPLIST_FILE = OpenDonationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sighmon.OpenDonationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenDonation.app/OpenDonation";
+			};
+			name = Debug;
+		};
+		050AFDE5217AD2E800B4EE63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4P8S9W2NYL;
+				INFOPLIST_FILE = OpenDonationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sighmon.OpenDonationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenDonation.app/OpenDonation";
+			};
+			name = Release;
+		};
+		050AFDE7217AD2E800B4EE63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4P8S9W2NYL;
+				INFOPLIST_FILE = OpenDonationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sighmon.OpenDonationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenDonation;
+			};
+			name = Debug;
+		};
+		050AFDE8217AD2E800B4EE63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4P8S9W2NYL;
+				INFOPLIST_FILE = OpenDonationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sighmon.OpenDonationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OpenDonation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		050AFDB0217AD2E700B4EE63 /* Build configuration list for PBXProject "OpenDonation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				050AFDDE217AD2E800B4EE63 /* Debug */,
+				050AFDDF217AD2E800B4EE63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		050AFDE0217AD2E800B4EE63 /* Build configuration list for PBXNativeTarget "OpenDonation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				050AFDE1217AD2E800B4EE63 /* Debug */,
+				050AFDE2217AD2E800B4EE63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		050AFDE3217AD2E800B4EE63 /* Build configuration list for PBXNativeTarget "OpenDonationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				050AFDE4217AD2E800B4EE63 /* Debug */,
+				050AFDE5217AD2E800B4EE63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		050AFDE6217AD2E800B4EE63 /* Build configuration list for PBXNativeTarget "OpenDonationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				050AFDE7217AD2E800B4EE63 /* Debug */,
+				050AFDE8217AD2E800B4EE63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		050AFDBF217AD2E700B4EE63 /* OpenDonation.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				050AFDC0217AD2E700B4EE63 /* OpenDonation.xcdatamodel */,
+			);
+			currentVersion = 050AFDC0217AD2E700B4EE63 /* OpenDonation.xcdatamodel */;
+			path = OpenDonation.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 050AFDAD217AD2E700B4EE63 /* Project object */;
+}
