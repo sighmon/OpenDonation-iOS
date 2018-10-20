@@ -15,8 +15,8 @@
 		050AFDC6217AD2E800B4EE63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050AFDC4217AD2E800B4EE63 /* LaunchScreen.storyboard */; };
 		050AFDD1217AD2E800B4EE63 /* OpenDonationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050AFDD0217AD2E800B4EE63 /* OpenDonationTests.swift */; };
 		050AFDDC217AD2E800B4EE63 /* OpenDonationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050AFDDB217AD2E800B4EE63 /* OpenDonationUITests.swift */; };
-		05DC7AB6217AFB60005B6FAD /* SquarePointOfSaleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05DC7AB5217AFB42005B6FAD /* SquarePointOfSaleSDK.framework */; };
 		05DC7ABB217AFED6005B6FAD /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DC7ABA217AFED6005B6FAD /* Constant.swift */; };
+		05DC7ABF217B0479005B6FAD /* SquarePointOfSaleSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05DC7AB5217AFB42005B6FAD /* SquarePointOfSaleSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,35 @@
 			remoteGlobalIDString = 8D3BD92C1CA9D6C600DA2B06;
 			remoteInfo = SquarePointOfSaleSDK;
 		};
+		05DC7ABC217B042A005B6FAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05DC7AAF217AFB42005B6FAD /* SquarePointOfSaleSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D3BD92B1CA9D6C600DA2B06;
+			remoteInfo = SquarePointOfSaleSDK;
+		};
+		05DC7AC0217B0479005B6FAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05DC7AAF217AFB42005B6FAD /* SquarePointOfSaleSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D3BD92B1CA9D6C600DA2B06;
+			remoteInfo = SquarePointOfSaleSDK;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		05DC7AC2217B047A005B6FAD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				05DC7ABF217B0479005B6FAD /* SquarePointOfSaleSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		050AFDB5217AD2E700B4EE63 /* OpenDonation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenDonation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,7 +95,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05DC7AB6217AFB60005B6FAD /* SquarePointOfSaleSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,10 +195,13 @@
 				050AFDB1217AD2E700B4EE63 /* Sources */,
 				050AFDB2217AD2E700B4EE63 /* Frameworks */,
 				050AFDB3217AD2E700B4EE63 /* Resources */,
+				05DC7AC2217B047A005B6FAD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				05DC7ABD217B042A005B6FAD /* PBXTargetDependency */,
+				05DC7AC1217B0479005B6FAD /* PBXTargetDependency */,
 			);
 			name = OpenDonation;
 			productName = OpenDonation;
@@ -340,6 +370,16 @@
 			isa = PBXTargetDependency;
 			target = 050AFDB4217AD2E700B4EE63 /* OpenDonation */;
 			targetProxy = 050AFDD8217AD2E800B4EE63 /* PBXContainerItemProxy */;
+		};
+		05DC7ABD217B042A005B6FAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SquarePointOfSaleSDK;
+			targetProxy = 05DC7ABC217B042A005B6FAD /* PBXContainerItemProxy */;
+		};
+		05DC7AC1217B0479005B6FAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SquarePointOfSaleSDK;
+			targetProxy = 05DC7AC0217B0479005B6FAD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
