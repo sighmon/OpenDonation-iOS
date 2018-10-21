@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print(error.localizedDescription)
             } else {
                 // Handle a successful request.
-                print("Success! That's nice.")
+                print(NSLocalizedString("The transaction was successful!", comment: "Successful transaction message"))
             }
             
         } catch let error as NSError {

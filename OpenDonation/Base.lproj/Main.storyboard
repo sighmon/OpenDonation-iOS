@@ -18,26 +18,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donate $1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwG-L9-uxe">
-                                <rect key="frame" x="121" y="215" width="133.5" height="37"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="31"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Axq-4s-riF" customClass="DesignableView" customModule="OpenDonation" customModuleProvider="target">
+                                <rect key="frame" x="67.5" y="193.5" width="240" height="280"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wgg-Zy-V73">
+                                        <rect key="frame" x="77" y="8" width="86" height="216"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="86" id="OVE-jv-mZh"/>
+                                            <constraint firstAttribute="height" constant="216" id="bfg-OY-nFL"/>
+                                        </constraints>
+                                    </pickerView>
+                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9b-h3-5EB">
+                                        <rect key="frame" x="70.5" y="215" width="99" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="Tk9-A9-dr2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                        <state key="normal" title="Donate"/>
+                                        <connections>
+                                            <action selector="donateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mua-mY-cAa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="2Ad-Zf-IKO"/>
+                                    <constraint firstAttribute="width" constant="240" id="BFc-rb-udf"/>
+                                    <constraint firstItem="f9b-h3-5EB" firstAttribute="centerX" secondItem="Axq-4s-riF" secondAttribute="centerX" id="RZB-PW-7VU"/>
+                                    <constraint firstItem="f9b-h3-5EB" firstAttribute="top" secondItem="wgg-Zy-V73" secondAttribute="bottom" constant="-9" id="e73-w5-AQ0"/>
+                                    <constraint firstItem="wgg-Zy-V73" firstAttribute="centerY" secondItem="Axq-4s-riF" secondAttribute="centerY" constant="-24" id="iXB-ei-C36"/>
+                                    <constraint firstItem="wgg-Zy-V73" firstAttribute="centerX" secondItem="Axq-4s-riF" secondAttribute="centerX" id="uYA-yW-YT6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.1944211032" green="0.19533934140000001" blue="0.67883831520000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.92156862745098034" green="0.32549019607843138" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pwG-L9-uxe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TF1-3N-XuY"/>
-                            <constraint firstItem="pwG-L9-uxe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="vfB-AR-NJq"/>
+                            <constraint firstItem="Axq-4s-riF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FDO-31-Ra8"/>
+                            <constraint firstItem="Axq-4s-riF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="do4-WP-P8x"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="status" destination="pwG-L9-uxe" id="way-3J-6o2"/>
+                        <outlet property="donationPicker" destination="wgg-Zy-V73" id="nt9-T0-cDu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
         </scene>
     </scenes>
 </document>
