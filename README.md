@@ -9,8 +9,8 @@ Open `ViewController.swift` and edit the values:
 
 ```Swift
 private var donationValue: Int = 5
-private var minimumDonationValue = 5
-private var maximumDonationValue = 99
+private var minimumDonationValue: Int = 5
+private var maximumDonationValue: Int = 99
 ```
 
 ## Register your app
@@ -20,10 +20,6 @@ Don’t forget to register your app under your Square dev account: <https://conn
 You’ll need your package name: `com.company.opendonation`
 
 And the URL Scheme: `opendonation`
-
-```bash
-$ keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android
-```
 
 Full instructions: <https://docs.connect.squareup.com/payments/pos/setup-ios>
 

@@ -13,8 +13,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     // Variables
     private var donationValue: Int = 5
-    private var minimumDonationValue = 5
-    private var maximumDonationValue = 99
+    private var minimumDonationValue: Int = 5
+    private var maximumDonationValue: Int = 99
     private var terminalDescription = NSLocalizedString("Open Donation app 1", comment: "Identifies this donation app")
     private var donationAmountArray = [Int]()
     
