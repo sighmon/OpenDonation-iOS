@@ -57,7 +57,7 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.1944211032" green="0.19533934140000001" blue="0.67883831520000004" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="0.92156862745098034" green="0.32549019607843138" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.92156862745098034" green="0.32549019607843138" blue="0.74536758410556003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Axq-4s-riF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FDO-31-Ra8"/>
                             <constraint firstItem="Axq-4s-riF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="do4-WP-P8x"/>

@@ -38,6 +38,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         donationPicker.delegate = self
         donationPicker.dataSource = self
         donationAmountArray = Array(minimumDonationValue...maximumDonationValue)
+        
+        // Avoid sleeping
+        UIApplication.shared.isIdleTimerDisabled = true
 
     }
     
